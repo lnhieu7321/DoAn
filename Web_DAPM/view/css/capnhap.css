@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+u {
+    list-style-type: none;
+}
+
+.header {
+    width: 100%;
+}
+
+.header-top {
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+}
+
+.header-top-left {
+    display: flex;
+}
+
+.header-top-left-logo {
+    width: 100px;
+}
+
+.header-top-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-top-left-font {
+    margin: 20px;
+    text-align: center;
+}
+
+.header-top-left-font span {
+    color: red;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.header-top-left-image {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.header-top-main {
+    line-height: 80px;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.header-top-main a {
+    line-height: 80px;
+    text-align: center;
+    margin: 40px;
+    font-size: 18px;
+}
+
+.header-main {
+    background: lightblue;
+    display: flex;
+}
+
+.header-main-time {
+    width: 200px;
+}
+
+.header-main-search {
+    width: 200px;
+}
+
+.container-top {
+    margin: 20px;
+    border-bottom: 2px solid black;
+}
+
+.container-top h3 {
+    font-size: 24px;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #58257b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.btn-btn {
+    font-weight: bold;
+    color: blue;
+    padding: 5px 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 100%;
+}
+
+.container-input {
+    margin: 0 15% 0 15%;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Bố cục linh hoạt: khi màn hình có chiều rộng dưới 600px thì hai cột chồng 
+  lên nhau thay vì nằm cạnh nhau */
+
+@media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.footer {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+    background: rgb(47, 212, 237);
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .col1,
+.col2,
+.col3,
+.col4 {
+    width: 25%;
+    box-sizing: border-box;
+    float: left;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li a {
+    font-size: 12px !important;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase !important;
+    padding-left: 25px;
+}
+
+.footer ul li a:hover {
+    color: red;
+}

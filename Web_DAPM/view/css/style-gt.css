@@ -1,0 +1,42 @@
+body{
+    background: #cccdcd;
+}
+.container1{
+    display: flex;
+    font-size: 14px;
+    background: #cccdcd;
+
+}
+.row{
+    margin-top: 100px;
+    margin-bottom: 5px;
+}
+.col-lg-8 .card-body{
+    border-style: groove;
+    width: 749px;
+    margin-left: 15%;
+    height: auto;
+    padding: 10px;
+    display: block;
+    background: #fff;
+    border-radius: 5px;
+}
+.col-lg-8 .card-body h1 span{
+    font-size: 2rem;
+    margin-left: 5%;
+    color: red;
+}
+
+/* --------------------------------- */
+.col-lg-4 .sidebar-r{
+    display: block;
+    margin-left: 10px;
+}
+.mb-2{
+    margin-top: 5px;
+    margin-left: 62px;
+}
+.mb-2 >a> img{
+    height: 140px;
+    width: 380px;
+}
